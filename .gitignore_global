@@ -1,5 +1,4 @@
-# Compiled source #
-###################
+# Compiled source
 *.com
 *.class
 *.dll
@@ -7,14 +6,12 @@
 *.o
 *.so
 
-# Temporary files #
-###################
+# Temporary files
 *.swp
 *.swo
 *~
 
-# Packages #
-############
+# Packages
 *.7z
 *.dmg
 *.gz
@@ -27,21 +24,17 @@
 *.pyo
 *.ipynb_checkpoints
 
-
-# OS generated files #
-######################
+# OS generated files
 *.log
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
 __pycache__
 
-# Editor files #
-################
+# Editor files
 .vscode
 .conda
 .venv
