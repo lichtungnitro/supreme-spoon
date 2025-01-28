@@ -91,17 +91,15 @@ plugins=(
   brew
   copyfile
   copypath
+  extract
   fast-syntax-highlighting
   git
   gitignore
-  iterm2
   macos
   pip
   pipenv
-  poetry
   python
   web-search
-  virtualenv
   z
   zsh-autocomplete
   zsh-autosuggestions
