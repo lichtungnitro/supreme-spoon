@@ -1,0 +1,167 @@
+{
+  // Accessibility settings
+  "accessibility.dimUnfocused.enabled": true,
+
+  // Enable breadcrumbs
+  "breadcrumbs.enabled": true,
+
+  // Debug console settings
+  "debug.console.fontFamily": "MonoLisa",
+  "debug.console.fontSize": 11,
+
+  // Editor settings
+  "editor.cursorBlinking": "phase",
+  "editor.detectIndentation": true,
+  "editor.lineHeight": 15,
+  "editor.foldingImportsByDefault": true,
+  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 11,
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [88, 90],
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 88,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "’": true,
+    "“": true,
+    "”": true
+  },
+
+  // Explorer settings
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+
+  // Files settings
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "onFocusChange",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Theme settings
+  "chaliceIcons.showArrows": true,
+  "window.autoDetectColorScheme": true,
+
+  // Jupyter Notebook settings
+  "notebook.formatOnSave.enabled": true,
+  "notebook.formatOnCellExecution": true,
+  "notebook.lineNumbers": "on",
+
+  // Python settings
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.languageServer": "Pylance",
+  "python.pipenvPath": "/Users/nitrolichtung/.local/bin/pipenv",
+  "python.venvFolders": [
+    "envs",
+    "virtualenvs",
+    ".direnv",
+    ".env",
+    ".pyenv",
+    ".venv"
+  ],
+
+  // Git settings
+  "git.ignoreLegacyWarning": true,
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
+
+  // Security settings
+  "security.workspace.trust.startupPrompt": "always",
+
+  // Terminal settings
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "MonoLisa",
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "rosetta": {
+      "path": "arch",
+      "args": ["-x86_64", "zsh", "-l"],
+      "overrideName": true
+    }
+  },
+
+  // Neovim settings
+  "vscode-neovim.neovimClean": true,
+  "vscode-neovim.neovimExecutablePaths.win32": "/opt/homebrew/bin/nvim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // Windows settings
+  "window.doubleClickIconToClose": true,
+  "window.commandCenter": false,
+
+  // Workbench settings
+  "workbench.activityBar.location": "top",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showIcons": false,
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editorAssociations": { "*.md": "vscode.markdown.preview.editor" },
+  "workbench.layoutControl.enabled": false,
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "readme",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.indent": 11,
+
+  // JSON settings
+  "[json][jsonc]": {
+    "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true
+  },
+
+  // Markdown settings
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "editor.formatOnPaste": true,
+    "files.trimTrailingWhitespace": false
+  },
+
+  // Python settings
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
