@@ -10,8 +10,6 @@ export CPATH="$CPATH:/opt/homebrew/include/:/opt/homebrew/Cellar/hdf5/1.14.3/inc
 export HDF5_DIR="/opt/homebrew/Cellar/hdf5"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
@@ -99,6 +97,7 @@ plugins=(
   pip
   pipenv
   python
+  sublime
   web-search
   z
   zsh-autocomplete
@@ -115,8 +114,12 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Choose homebrew hints preference
-export HOMEBREW_NO_ENV_HINTS="false"
+# Preferred homebrew configuration
+export HOMEBREW_NO_ENV_HINTS=
+export HOMEBREW_PIP_INDEX_URL="https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+
+# Preferred pipenv mirror
+export PIPENV_PYPI_MIRROR="https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -144,21 +147,6 @@ export VIRTUAL_ENV_DISABLE_PROMPT=0
 export export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 alias setproxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 alias unsetproxy="unset http_proxy https_proxy all_proxy"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/nitrolichtung/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/nitrolichtung/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/nitrolichtung/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/nitrolichtung/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
