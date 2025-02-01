@@ -47,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -114,12 +114,17 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Preferred homebrew configuration
+# Preferred homebrew config
 export HOMEBREW_NO_ENV_HINTS=
 export HOMEBREW_PIP_INDEX_URL="https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+export HOMEBREW_SERVICES_NO_DOMAIN_WARNING=1
 
-# Preferred pipenv mirror
+# Preferred hugging face mirror
+export HF_ENDPOINT="https://hf-mirror.com"
+
+# Preferred pipenv config
 export PIPENV_PYPI_MIRROR="https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+export PIPENV_VERBOSITY=-1
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
