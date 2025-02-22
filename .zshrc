@@ -96,9 +96,13 @@ plugins=(
   macos
   pip
   pipenv
+  podman
   python
+  ssh
   sublime
+  tldr
   web-search
+  vi-mode
   z
   zsh-autocomplete
   zsh-autosuggestions
