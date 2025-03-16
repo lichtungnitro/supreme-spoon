@@ -89,6 +89,7 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.profiles.osx": {
     "bash": {
       "path": "bash",
@@ -112,13 +113,6 @@
       "args": ["-x86_64", "zsh", "-l"],
       "overrideName": true
     }
-  },
-
-  // Neovim settings
-  "vscode-neovim.neovimClean": true,
-  "vscode-neovim.neovimExecutablePaths.win32": "/opt/homebrew/bin/nvim",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
   },
 
   // Windows settings
