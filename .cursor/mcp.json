@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "Sequential Thinkink": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/server-sequential-thinking"
+      ]
+    },
+    "Neon Database": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "neon",
+        "--config",
+        "\"{\\\"neonApiKey\\\":\\\"x_api_key\\\"}\""
+      ]
+    },
+    "Playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@showfive/playwright-mcp-server",
+        "--config",
+        "\"{}\""
+      ]
+    },
+    "Time Server": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time",
+        "--local-timezone",
+        "Europe/London"
+      ]
+    },
+    "Fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/fetch",
+        "--config",
+        "\"{}\""
+      ]
+    }
+  }
+}
