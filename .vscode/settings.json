@@ -6,16 +6,20 @@
   "breadcrumbs.enabled": true,
 
   // Debug console settings
-  "debug.console.fontFamily": "MonoLisa",
+  "debug.console.fontFamily": "Maple Mono",
   "debug.console.fontSize": 11,
+
+  // Podman settings
+  "dev.containers.dockerPath": "podman",
+  "dev.containers.dockerComposePath": "podman-compose",
 
   // Editor settings
   "editor.cursorBlinking": "phase",
   "editor.detectIndentation": true,
   "editor.lineHeight": 15,
   "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Maple Mono, MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
   "editor.fontSize": 11,
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
@@ -27,8 +31,47 @@
   "editor.renderLineHighlight": "gutter",
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [88, 90],
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "interface": {
+        "italic": true
+      },
+      "selfParameter": {
+        "italic": true
+      },
+      "keyword": {
+        "italic": true
+      },
+      "*.static": {
+        "italic": true
+      }
+    }
+  },
   "editor.smoothScrolling": true,
   "editor.tabSize": 4,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "constant.language.undefined",
+          "constant.language.null",
+          "constant.language.nullptr",
+          "meta.type keyword.operator.expression.typeof",
+          "meta.type keyword.operator.expression.keyof",
+          "keyword.control",
+          "keyword.function",
+          "keyword.operator.borrow.and.rust",
+          "storage.type",
+          "storage.modifier",
+          "variable.language.this",
+          "markup.italic"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 88,
   "editor.unicodeHighlight.allowedCharacters": {
@@ -84,7 +127,7 @@
   // Terminal settings
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "MonoLisa",
+  "terminal.integrated.fontFamily": "Maple Mono",
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.inheritEnv": false,
@@ -126,8 +169,10 @@
   "workbench.editor.showTabs": "none",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": { "*.md": "vscode.markdown.preview.editor" },
+  "workbench.iconTheme": "chalice-icon-theme",
   "workbench.layoutControl.enabled": false,
-  "workbench.preferredLightColorTheme": "Default Dark+",
+  "workbench.list.openMode": "doubleClick",
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "readme",
@@ -157,5 +202,15 @@
       "source.organizeImports.ruff": "explicit"
     },
     "editor.defaultFormatter": "ms-python.black-formatter"
-  }
+  },
+
+  // YAML settings
+  "[yaml][yml]": {
+    "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true
+  },
+
+  // Cline settings
+  "cline.chromeExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 }
