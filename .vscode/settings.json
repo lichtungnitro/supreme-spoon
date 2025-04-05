@@ -94,6 +94,14 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
+  // Git settings
+  "git.autofetch": true,
+
+  // Markdown settings
+  "markdown.math.enabled": true,
+  "markdown.preview.fontSize": 11,
+  "markdown.validate.enabled": true,
+
   // Theme settings
   "chaliceIcons.showArrows": true,
   "window.autoDetectColorScheme": true,
@@ -102,6 +110,7 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
   "notebook.lineNumbers": "on",
+  "notebook.markdown.lineHeight": 15,
 
   // Python settings
   "python.envFile": "${workspaceFolder}/.env",
