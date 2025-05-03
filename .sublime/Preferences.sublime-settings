@@ -1,0 +1,19 @@
+{
+	"auto_hide_menu": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_style": "blink",
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"font_face": "SF Mono",
+	"font_size": 11,
+	"highlight_line": true,
+	"rulers": [88, 90],
+	"ruler_width": 0.7,
+	"ruler_style": "stippled",
+	"theme": "Default.sublime-theme",
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	]
+}

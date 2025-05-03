@@ -15,6 +15,7 @@
 
   // Editor settings
   "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": true,
   "editor.lineHeight": 15,
   "editor.foldingImportsByDefault": true,
@@ -80,6 +81,13 @@
     "”": true
   },
 
+  // Excalidraw settings
+  "excalidraw.image": {
+    "exportScale": 1,
+    "exportWithBackground": true,
+    "exportWithDarkMode": false
+  },
+
   // Explorer settings
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
@@ -125,10 +133,14 @@
     ".venv"
   ],
 
-  // Git settings
+  // Git and search settings
   "git.ignoreLegacyWarning": true,
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
+  "search.exclude": {
+    "**/*.log": true,
+    "**/tmp": true
+  },
 
   // Security settings
   "security.workspace.trust.startupPrompt": "always",
@@ -181,10 +193,10 @@
   "workbench.iconTheme": "chalice-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.list.openMode": "doubleClick",
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "readme",
   "workbench.statusBar.visible": true,
   "workbench.tree.indent": 11,
 
@@ -221,5 +233,10 @@
   },
 
   // Cline settings
-  "cline.chromeExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  "cline.chromeExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+
+  //Copilot settings
+  "github.copilot.chat.copilotDebugCommand.enabled": false,
+  "github.copilot.chat.reviewSelection.enabled": false,
+  "github.copilot.chat.startDebugging.enabled": false
 }
