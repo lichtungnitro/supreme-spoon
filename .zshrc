@@ -91,16 +91,18 @@ plugins=(
   copypath
   extract
   fast-syntax-highlighting
-  git
-  gitignore
+  fzf
   macos
   pip
   pipenv
   podman
   python
+  redis-cli
   ssh
   sublime
   tldr
+  tmux
+  uv
   web-search
   vi-mode
   z
@@ -141,6 +143,11 @@ fi
 export ARCHFLAGS="-arch arm64"
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libp/include"
+
+# Find options
+export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow --exclude .git --color always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Show virtualenv name in zsh prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=0

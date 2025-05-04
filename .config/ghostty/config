@@ -3,14 +3,16 @@ font-family = SF Mono
 font-size = 11
 font-thicken = true
 
-# Display
+# Display tweak
 alpha-blending = linear-corrected
 background-opacity = 0.96
 background-blur-radius = 40
 cursor-style-blink = true
+quick-terminal-screen = macos-menu-bar
 theme = Atom
 window-height = 23
 window-theme = dark
+window-save-state = always
 window-width = 83
 
 # Usability
