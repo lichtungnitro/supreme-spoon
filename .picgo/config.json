@@ -3,7 +3,7 @@
     "uploader": "smms-user",
     "current": "smms-user",
     "smms-user": {
-      "Authorization": "oAKLYnU7zb7zqpavucQM5UT5GsM6iYtQ",
+      "Authorization": "your_access_token",
       "backupDomain": "smms.app"
     },
     "transformer": "path"
