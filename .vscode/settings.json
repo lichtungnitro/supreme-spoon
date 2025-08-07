@@ -5,13 +5,24 @@
   // Enable breadcrumbs
   "breadcrumbs.enabled": true,
 
+  // Cursor settings
+  "cursor.chat.terminalShowHoverHint": true,
+  "cursor.composer.collapsePaneInputBoxPills": true,
+  "cursor.composer.cmdPFilePicker2": true,
+  "cursor.composer.showSuggestedFiles": true,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.cpp.enablePartialAccepts": true,
+
   // Debug console settings
   "debug.console.fontFamily": "Maple Mono",
   "debug.console.fontSize": 11,
 
+  // Prpxy settings
+  "http.proxy": "http://127.0.0.1:7890",
+  "http.proxyStrictSSL": false,
+
   // Podman settings
   "dev.containers.dockerPath": "podman",
-  "dev.containers.dockerComposePath": "podman-compose",
 
   // Editor settings
   "editor.cursorBlinking": "phase",
@@ -19,7 +30,7 @@
   "editor.detectIndentation": true,
   "editor.lineHeight": 15,
   "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "Maple Mono, MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "SF Mono, MonoLisa, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 11,
   "editor.fontWeight": "400",
@@ -81,13 +92,17 @@
     "”": true
   },
 
+  // Neovim setting
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
   // Excalidraw settings
   "excalidraw.image": {
     "exportScale": 1,
     "exportWithBackground": true,
     "exportWithDarkMode": false
   },
-
   // Explorer settings
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
@@ -102,17 +117,14 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
-  // Git settings
-  "git.autofetch": true,
+  // Theme settings
+  "chaliceIcons.showArrows": true,
+  "window.autoDetectColorScheme": true,
 
   // Markdown settings
   "markdown.math.enabled": true,
   "markdown.preview.fontSize": 11,
   "markdown.validate.enabled": true,
-
-  // Theme settings
-  "chaliceIcons.showArrows": true,
-  "window.autoDetectColorScheme": true,
 
   // Jupyter Notebook settings
   "notebook.formatOnSave.enabled": true,
@@ -123,7 +135,7 @@
   // Python settings
   "python.envFile": "${workspaceFolder}/.env",
   "python.languageServer": "Pylance",
-  "python.pipenvPath": "/Users/nitrolichtung/.local/bin/pipenv",
+  "python.pipenvPath": "~/.local/bin/pipenv",
   "python.venvFolders": [
     "envs",
     "virtualenvs",
@@ -133,7 +145,11 @@
     ".venv"
   ],
 
-  // Git and search settings
+  // Git settings
+  "git.autofetch": true,
+  "git.blame.editorDecoration.enabled": true,
+  "git.decorations.enabled": true,
+  "git.autoStash": true,
   "git.ignoreLegacyWarning": true,
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
@@ -185,19 +201,18 @@
 
   // Workbench settings
   "workbench.activityBar.location": "top",
-  "workbench.editor.enablePreview": false,
+  "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": "none",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editorAssociations": { "*.md": "vscode.markdown.preview.editor" },
-  "workbench.iconTheme": "chalice-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.list.openMode": "doubleClick",
-  "workbench.preferredDarkColorTheme": "Default Dark+",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Gruvbox Dark Hard",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "workbench.statusBar.visible": true,
+  "workbench.statusBar.visible": false,
   "workbench.tree.indent": 11,
 
   // JSON settings
@@ -230,13 +245,5 @@
     "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true
-  },
-
-  // Cline settings
-  "cline.chromeExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-
-  //Copilot settings
-  "github.copilot.chat.copilotDebugCommand.enabled": false,
-  "github.copilot.chat.reviewSelection.enabled": false,
-  "github.copilot.chat.startDebugging.enabled": false
+  }
 }
