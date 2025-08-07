@@ -3,17 +3,27 @@
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_style": "blink",
-	"color_scheme": "Monokai.sublime-color-scheme",
+	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
 	"font_face": "SF Mono",
 	"font_size": 11,
 	"highlight_line": true,
+	"remember_workspace": false,
 	"rulers": [88, 90],
 	"ruler_width": 0.7,
 	"ruler_style": "stippled",
-	"theme": "Default.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
+	"window_geometry": {
+		"x": 100,
+		"y": 100,
+		"width": 800,
+		"height": 600,
+		"maximized": false,
+	},
+	"word_wrap": true,
 	"ignored_packages":
 	[
 		"Package Control",
-		"Vintage"
-	]
+		"Vintage",
+	],
+	"index_files": true,
 }
