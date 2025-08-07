@@ -11,6 +11,10 @@ export HDF5_DIR="/opt/homebrew/Cellar/hdf5"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+export LUA_PATH="./?.lua;/opt/homebrew/share/lua/5.*/?.lua"
+export LUA_CPATH="./?.so;/opt/homebrew/lib/lua/5.*/?.so"
+eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -29,7 +33,7 @@ ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -92,6 +96,7 @@ plugins=(
   extract
   fast-syntax-highlighting
   fzf
+  gitignore
   macos
   pip
   pipenv
@@ -166,3 +171,16 @@ alias unsetproxy="unset http_proxy https_proxy all_proxy"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm setup
+export PNPM_HOME="/Users/nitrolichtung/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Add RVM to PATH for scripting
+# Make sure this is the last PATH variable change.
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
