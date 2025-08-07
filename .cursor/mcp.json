@@ -1,53 +1,84 @@
 {
   "mcpServers": {
-    "Sequential Thinkink": {
+    "Sequential Thinking": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@smithery-ai/server-sequential-thinking"
-      ]
-    },
-    "Neon Database": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "neon",
-        "--config",
-        "\"{\\\"neonApiKey\\\":\\\"x_api_key\\\"}\""
-      ]
-    },
-    "Playwright": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@showfive/playwright-mcp-server",
-        "--config",
-        "\"{}\""
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
     "Time Server": {
       "command": "uvx",
+      "args": ["mcp-server-time", "--local-timezone", "Europe/London"]
+    },
+    "Serena": {
+      "command": "uvx",
       "args": [
-        "mcp-server-time",
-        "--local-timezone",
-        "Europe/London"
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena-mcp-server"
       ]
     },
-    "Fetch": {
+    "Context 7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "Puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": false, \"executablePath\": \"your_browser_path", \"args\": [] }",
+        "ALLOW_DANGEROUS": "true"
+      }
+    },
+    "Excel Stdio": {
+      "command": "uvx",
+      "args": ["excel-mcp-server", "stdio"]
+    },
+    "Unity Server": {
+      "command": "node",
+      "args": [
+        "your_project_path/build/index.js"
+      ]
+    },
+    "Framelink Figma": {
       "command": "npx",
       "args": [
         "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@smithery-ai/fetch",
-        "--config",
-        "\"{}\""
+        "figma-developer-mcp",
+        "--figma-api-key=your_access_token",
+        "--stdio"
+      ]
+    },
+    "Linear": {
+      "url": "https://mcp.linear.app/sse"
+    },
+    "Browser Use": {
+      "command": "uvx",
+      "args": ["browser-use[cli]", "--mcp"],
+      "env": {
+        "OPENAI_API_KEY": "X-API-KEY"
+      }
+    },
+    "Talk to Figma": {
+      "command": "/opt/homebrew/bin/bun",
+      "args": [
+        "/Users/nitrolichtung/Documents/script/cursor-talk-to-figma-mcp/src/talk_to_figma_mcp/server.ts"
+      ]
+    },
+    "Supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "your_access_token"
+      ]
+    },
+    "File System": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/nitrolichtung/Desktop",
+        "/Users/nitrolichtung/Downloads"
       ]
     }
   }
