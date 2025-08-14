@@ -60,7 +60,7 @@
     "Talk to Figma": {
       "command": "/opt/homebrew/bin/bun",
       "args": [
-        "/Users/nitrolichtung/Documents/script/cursor-talk-to-figma-mcp/src/talk_to_figma_mcp/server.ts"
+        "~/Documents/script/cursor-talk-to-figma-mcp/src/talk_to_figma_mcp/server.ts"
       ]
     },
     "Supabase": {
@@ -77,8 +77,8 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/Users/nitrolichtung/Desktop",
-        "/Users/nitrolichtung/Downloads"
+        "~/Desktop",
+        "~/Downloads"
       ]
     }
   }
