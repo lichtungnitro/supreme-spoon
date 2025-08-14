@@ -24,7 +24,7 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
       "env": {
-        "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": false, \"executablePath\": \"your_browser_path", \"args\": [] }",
+        "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": false, \"executablePath\": \"your_browser_path\", \"args\": [] }",
         "ALLOW_DANGEROUS": "true"
       }
     },
