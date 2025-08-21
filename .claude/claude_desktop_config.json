@@ -1,54 +1,67 @@
 {
-    "globalShortcut":"Alt+C",
-    "mcpServers":{
-        "Sequential Thinking":{
-            "command":"/opt/homebrew/bin/npx",
-            "args":[
+    "globalShortcut": "Alt+C",
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "npx",
+            "args": [
                 "-y",
                 "@modelcontextprotocol/server-sequential-thinking"
             ]
         },
-        "Time Server":{
-            "command":"/Users/nitrolichtung/.local/bin/uvx",
-            "args":[
+        "Fetch": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-fetch"
+            ]
+        },
+        "Time Server": {
+            "command": "uvx",
+            "args": [
                 "mcp-server-time",
                 "--local-timezone",
                 "Europe/London"
             ]
         },
-        "Context 7":{
-            "command":"/opt/homebrew/bin/npx",
-            "args":[
+        "Context 7": {
+            "command": "npx",
+            "args": [
                 "-y",
                 "@upstash/context7-mcp"
             ]
         },
-        "Brave Search":{
-            "command":"npx",
-            "args":[
+        "Server Memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ]
+        },
+        "Brave Search": {
+            "command": "npx",
+            "args": [
                 "-y",
                 "@modelcontextprotocol/server-brave-search"
             ],
-            "env":{
-                "BRAVE_API_KEY":"X_API_KEY"
+            "env": {
+                "BRAVE_API_KEY": "X_API_KEY"
             }
         },
-        "Linear":{
-            "command":"/opt/homebrew/bin/npx",
-            "args":[
-                "-y",
-                "mcp-remote",
-                "https://mcp.linear.app/sse"
-            ]
-        },
-        "File System":{
-            "command":"/opt/homebrew/bin/npx",
-            "args":[
+        "File System": {
+            "command": "npx",
+            "args": [
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
                 "~/Desktop",
                 "~/Documents",
                 "~/Downloads"
+            ]
+        },
+        "Linear": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-remote",
+                "https://mcp.linear.app/sse"
             ]
         }
     }
