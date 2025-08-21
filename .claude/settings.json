@@ -1,18 +1,75 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(npm run lint)",
-      "Bash(npm run test:*)",
-      "Read(~/.zshrc)"
-    ],
-    "deny": [
-      "Bash(curl:*)"
-    ]
-  },
-  "env": {
-    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
-    "OTEL_METRICS_EXPORTER": "otlp",
-    "HTTP_PROXY": "http://127.0.0.1:7890",
-    "HTTPS_PROXY": "http://127.0.0.1:7890"
-  }
+    "permissions": {
+        "allow": [
+            "Bash(npm run lint)",
+            "Bash(npm run test:*)",
+            "Read(~/.zshrc)"
+        ],
+        "deny": [
+            "Bash(curl:*)"
+        ]
+    },
+    "env": {
+        "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+        "OTEL_METRICS_EXPORTER": "otlp",
+        "HTTP_PROXY": "http://127.0.0.1:7890",
+        "HTTPS_PROXY": "http://127.0.0.1:7890"
+    },
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "Fetch": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-fetch"
+            ]
+        },
+        "Time Server": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-time",
+                "--local-timezone",
+                "Europe/London"
+            ]
+        },
+        "Context 7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ]
+        },
+        "Server Memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ]
+        },
+        "Brave Search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "X_API_KEY"
+            }
+        },
+        "File System": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "~/Desktop",
+                "~/Documents",
+                "~/Downloads"
+            ]
+        }
+    }
 }
