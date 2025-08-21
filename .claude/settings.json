@@ -1,4 +1,7 @@
 {
+    "installMethod": "native",
+    "autoUpdates": true,
+    "preferredNotifChannel": "terminal_bell",
     "permissions": {
         "allow": [
             "Bash(npm run lint)",
