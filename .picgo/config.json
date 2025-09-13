@@ -9,9 +9,14 @@
     "transformer": "path"
   },
   "picgoPlugins": {
-    "picgo-plugin-smms-user": true
+    "picgo-plugin-smms-user": true,
+    "picgo-plugin-to-webp": true,
+    "picgo-plugin-autocopy": true
   },
   "settings": {
     "language": "en-US"
+  },
+  "picgo-plugin-autocopy": {
+    "template": "markdown"
   }
 }
