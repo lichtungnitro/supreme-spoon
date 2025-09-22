@@ -1,0 +1,18 @@
+# Type: Add, Fix, Change, Remove, Document, Refactor, Test, Upgrade, Revert
+# Add:       new feature or capability
+# Fix:       bug correction
+# Change:    modification of existing behavior
+# Remove:    deletion of code or files
+# Document:  update to documentation or comments
+# Refactor:  restructure without behavior change
+# Test:      add or correct tests
+# Upgrade:   update dependency or platform version
+# Revert:    undo previous commit
+
+# <Type>: <Imperative summary: max 50 characters>
+#
+# Explain why this change is made.  Keep lines ≤ 72 characters.
+# Leave one blank line above this paragraph.
+#
+# Co-authored-by: Name <email>
+# Refs: #issue-id%   
